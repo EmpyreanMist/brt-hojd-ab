@@ -7,7 +7,13 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 
 export default function Header() {
   return (
-    <Navbar key="lg" expand="lg" bg="dark" variant="dark" className="px-3 py-2">
+    <Navbar
+      key="lg"
+      expand="lg"
+      bg="dark"
+      variant="dark"
+      className="px-3 py-2 border-bottom border-white"
+    >
       <Container fluid>
         <Navbar.Brand href="#">BRT Höjd AB</Navbar.Brand>
 
