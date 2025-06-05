@@ -15,7 +15,7 @@ export default function Header() {
       className="px-3 py-2 border-bottom border-white"
     >
       <Container fluid>
-        <Navbar.Brand href="#">BRT Höjd AB</Navbar.Brand>
+        <Navbar.Brand href="/">BRT Höjd AB</Navbar.Brand>
 
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
 
@@ -41,7 +41,7 @@ export default function Header() {
               <Nav.Link className="text-white" href="#om-oss">
                 Referenser
               </Nav.Link>
-              <Nav.Link className="text-white" href="#kontakt">
+              <Nav.Link className="text-white" href="/about">
                 Om oss
               </Nav.Link>
             </Nav>
