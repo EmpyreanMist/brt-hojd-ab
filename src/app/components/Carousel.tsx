@@ -4,7 +4,7 @@ import { Carousel } from "react-bootstrap";
 
 const images = [
   {
-    src: "/workPictures/hero24.jpg",
+    src: "/workPictures/hero7.jpg",
     title: "Industriklättring",
     description: "Vi når platser andra inte kan.",
   },

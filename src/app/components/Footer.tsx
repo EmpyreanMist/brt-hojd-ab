@@ -1,17 +1,23 @@
-// src/components/Footer.tsx
 "use client";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-light mt-5 pt-4 pb-3 border-top border-white">
+    <footer className="bg-white text-dark mt-5 pt-4 pb-3 border-top border-black">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={4} className="mb-3">
-            <h5>BRT Höjd AB</h5>
+            <Image
+              src="/loggo.jpg" // Bilden måste ligga i public/
+              alt="BRT Höjd AB logotyp"
+              width={300}
+              height={60}
+              className="mb-2"
+            />
             <p className="small">
               Specialister på industriklättring, byggtjänster och fallskydd. Vi
               når där andra inte räcker till.
@@ -22,17 +28,17 @@ export default function Footer() {
             <h5>Länkar</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#tjanster" className="text-light text-decoration-none">
+                <a href="#tjanster" className="text-dark text-decoration-none">
                   Tjänster
                 </a>
               </li>
               <li>
-                <a href="#om-oss" className="text-light text-decoration-none">
+                <a href="#om-oss" className="text-dark text-decoration-none">
                   Om oss
                 </a>
               </li>
               <li>
-                <a href="#kontakt" className="text-light text-decoration-none">
+                <a href="#kontakt" className="text-dark text-decoration-none">
                   Kontakt
                 </a>
               </li>

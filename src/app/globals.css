@@ -37,3 +37,14 @@ main {
     transform: translateY(0);
   }
 }
+
+.logo-img {
+  width: 200px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .logo-img {
+    width: 350px;
+  }
+}
