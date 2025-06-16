@@ -1,6 +1,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #e10600;
+  --background-light: #f9f9f9;
+  --background-dark: #1a1a1a;
+  --text-dark: #111;
+  --text-muted: #666;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,10 +46,141 @@ main {
 .logo-img {
   width: 200px;
   height: auto;
+  max-width: 100%;
+}
+
+.navbar-brand {
+  flex-shrink: 0;
 }
 
 @media (min-width: 992px) {
   .logo-img {
     width: 350px;
   }
+}
+
+.carousel-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.display-4 {
+  font-size: 3rem;
+}
+
+.lead {
+  color: #555;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.card h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #555;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.btn-dark {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  color: var(--text-dark);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Sektioner */
+.bg-light {
+  background-color: var(--background-light) !important;
+}
+
+.bg-dark {
+  background-color: var(--background-dark) !important;
+}
+
+/* Textfärger */
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Knappar */
+.btn-dark {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+}
+
+.btn-dark:hover {
+  background-color: #b70500;
+  border-color: #b70500;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.card h5 {
+  color: var(--text-dark);
+}
+
+.card p {
+  color: var(--text-muted);
 }

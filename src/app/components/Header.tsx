@@ -19,11 +19,11 @@ export default function Header() {
       <Container fluid>
         <Navbar.Brand href="/" className="d-flex align-items-center">
           <Image
-            src="/loggo.jpg"
+            src="/workPictures/brt-loggo.png"
             alt="BRT Höjd AB logotyp"
             width={0}
             height={0}
-            sizes="(min-width: 992px) 350px, 200px"
+            sizes="(min-width: 992px) 350px, 400px"
             priority
             className="d-inline-block align-top logo-img"
           />
@@ -57,7 +57,7 @@ export default function Header() {
               <Nav.Link className="text-dark fw-semibold" href="#om-oss">
                 Referenser
               </Nav.Link>
-              <Nav.Link className="text-dark fw-semibold" href="/about">
+              <Nav.Link className="text-dark fw-semibold" href="/om">
                 Om oss
               </Nav.Link>
             </Nav>

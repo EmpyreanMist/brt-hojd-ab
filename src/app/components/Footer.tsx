@@ -12,12 +12,14 @@ export default function Footer() {
         <Row className="align-items-center">
           <Col md={4} className="mb-3">
             <Image
-              src="/loggo.jpg" // Bilden måste ligga i public/
+              src="/workPictures/brt-loggo.png"
               alt="BRT Höjd AB logotyp"
-              width={300}
-              height={60}
-              className="mb-2"
+              width={0}
+              height={0}
+              sizes="(min-width: 992px) 350px, 400px"
+              className="mb-2 logo-img"
             />
+
             <p className="small">
               Specialister på industriklättring, byggtjänster och fallskydd. Vi
               når där andra inte räcker till.
@@ -29,17 +31,17 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li>
                 <a href="#tjanster" className="text-dark text-decoration-none">
-                  Tjänster
+                  Vad är industriklättring?
                 </a>
               </li>
               <li>
                 <a href="#om-oss" className="text-dark text-decoration-none">
-                  Om oss
+                  Referenser
                 </a>
               </li>
               <li>
                 <a href="#kontakt" className="text-dark text-decoration-none">
-                  Kontakt
+                  Om oss
                 </a>
               </li>
             </ul>
@@ -47,8 +49,9 @@ export default function Footer() {
 
           <Col md={4} className="mb-3">
             <h5>Kontakt</h5>
-            <p className="small mb-1">E-post: hejhej@tjena.com</p>
-            <p className="small mb-0">Telefon: 12345678910</p>
+            <p className="small mb-1">E-post: elias@brthojd.se</p>
+            <p className="small mb-0">Telefon: 0705797247</p>
+            <p className="small mb-1">Adress: Krondikesvägen 78B Östersund</p>
           </Col>
         </Row>
 

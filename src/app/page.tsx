@@ -4,11 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="bg-white text-dark">
-      {/* Hero */}
       <section className="text-center py-5 bg-white">
         <Container>
           <h1 className="display-4 fw-bold fade-in mb-3">
@@ -18,20 +18,19 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Carousel */}
       <section>
         <Carousel />
       </section>
 
-      {/* Fördelar */}
       <section className="py-5 bg-light">
         <Container>
-          <Row className="text-center">
+          <Row className="text-center justify-content-center">
             <Col md={3} className="mb-4">
-              <div>🧗‍♂️</div>
-              <h5 className="mt-2">Industriklättring</h5>
-              <p className="small">Vi når där andra inte kan.</p>
+              <div className="feature-icon">🧗‍♂️</div>
+              <h5 className="mt-2 fw-semibold">Industriklättring</h5>
+              <p className="small text-muted">Vi når där andra inte kan.</p>
             </Col>
+
             <Col md={3} className="mb-4">
               <div>🛠️</div>
               <h5 className="mt-2">Bygg & montage</h5>
@@ -42,16 +41,10 @@ export default function Home() {
               <h5 className="mt-2">Säkerhet</h5>
               <p className="small">Certifierade och försäkrade.</p>
             </Col>
-            <Col md={3} className="mb-4">
-              <div>⚡</div>
-              <h5 className="mt-2">Snabb respons</h5>
-              <p className="small">Vi är snabbt på plats vid behov.</p>
-            </Col>
           </Row>
         </Container>
       </section>
 
-      {/* Om oss */}
       <section className="py-5">
         <Container>
           <Row className="align-items-center">
@@ -63,22 +56,25 @@ export default function Home() {
                 erfarenhet erbjuder vi smarta lösningar för svåråtkomliga
                 platser.
               </p>
-              <Button variant="dark" href="/about">
+              <Button variant="dark" href="/om">
                 Läs mer om oss
               </Button>
             </Col>
             <Col md={6}>
-              <img
-                src="/loggo.jpg"
-                alt="BRT Höjd AB logga"
-                className="img-fluid"
+              <Image
+                src="/workPictures/brt-loggo.png"
+                alt="BRT Höjd AB logotyp"
+                width={0}
+                height={0}
+                sizes="(min-width: 992px) 350px, 400px"
+                priority
+                className="d-inline-block align-top logo-img"
               />
             </Col>
           </Row>
         </Container>
       </section>
 
-      {/* Tjänster */}
       <section className="py-5 bg-light">
         <Container>
           <h2 className="text-center mb-4">Våra tjänster</h2>
@@ -111,7 +107,6 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Call to Action */}
       <section className="py-5 text-center">
         <Container>
           <h2 className="mb-3">Redo att ta nästa steg?</h2>
@@ -119,26 +114,6 @@ export default function Home() {
           <Button variant="dark" size="lg" href="#kontakt">
             Kontakta oss
           </Button>
-        </Container>
-      </section>
-
-      {/* Kontaktblock */}
-      <section id="kontakt" className="py-5 bg-dark text-light">
-        <Container>
-          <Row>
-            <Col md={6}>
-              <h4>Kontakt</h4>
-              <p>E-post: hejhej@tjena.com</p>
-              <p>Telefon: 123-456789</p>
-              <p>Org.nr: 556789-XXXX</p>
-            </Col>
-            <Col md={6}>
-              <h4>Adress</h4>
-              <p>BRT Höjd AB</p>
-              <p>Höjdgatan 1</p>
-              <p>123 45 Klätterstad</p>
-            </Col>
-          </Row>
         </Container>
       </section>
     </main>

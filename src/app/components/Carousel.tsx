@@ -4,7 +4,7 @@ import { Carousel } from "react-bootstrap";
 
 const images = [
   {
-    src: "/workPictures/hero7.jpg",
+    src: "/workPictures/hero1.jpg",
     title: "Industriklättring",
     description: "Vi når platser andra inte kan.",
   },
@@ -22,21 +22,37 @@ const images = [
 
 export default function ImageCarousel() {
   return (
-    <Carousel fade interval={4000}>
-      {images.map((image, index) => (
-        <Carousel.Item key={index}>
-          <img
-            src={image.src}
-            className="d-block w-100 object-fit-cover"
-            alt={`Bild ${index + 1}`}
-            style={{ height: "75vh", objectFit: "cover" }}
-          />
-          <Carousel.Caption className="bg-dark bg-opacity-50 rounded p-2">
-            <h3>{image.title}</h3>
-            <p>{image.description}</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+    <div className="carousel-wrapper text-center">
+      <Carousel fade interval={4000}>
+        {images.map((image, index) => (
+          <Carousel.Item key={index}>
+            <div style={{ display: "inline-block", position: "relative" }}>
+              <img
+                src={image.src}
+                alt={`Bild ${index + 1}`}
+                style={{
+                  height: "75vh",
+                  objectFit: "contain",
+                  display: "block",
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: 0,
+                  width: "100%",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  color: "white",
+                  padding: "1rem",
+                }}
+              >
+                <h3>{image.title}</h3>
+                <p>{image.description}</p>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 }
