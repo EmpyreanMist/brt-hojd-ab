@@ -50,7 +50,7 @@ export default function Footer() {
           <Col md={4} className="mb-3">
             <h5>Kontakt</h5>
             <p className="small mb-1">E-post: elias@brthojd.se</p>
-            <p className="small mb-0">Telefon: 0705797247</p>
+            <p className="small mb-0">Telefon: 070 579 72 47</p>
             <p className="small mb-1">Adress: Krondikesvägen 78B Östersund</p>
           </Col>
         </Row>

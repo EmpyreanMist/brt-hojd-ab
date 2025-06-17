@@ -51,10 +51,13 @@ export default function Header() {
 
           <Offcanvas.Body className="bg-white text-dark">
             <Nav className="justify-content-end flex-grow-1 pe-3 gap-4">
-              <Nav.Link className="text-dark fw-semibold" href="#tjanster">
+              <Nav.Link
+                className="text-dark fw-semibold"
+                href="/industriklattring"
+              >
                 Vad är industriklättring?
               </Nav.Link>
-              <Nav.Link className="text-dark fw-semibold" href="#om-oss">
+              <Nav.Link className="text-dark fw-semibold" href="/referenser">
                 Referenser
               </Nav.Link>
               <Nav.Link className="text-dark fw-semibold" href="/om">

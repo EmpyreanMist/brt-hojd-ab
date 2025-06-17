@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-white text-dark">
-      <section className="text-center py-5 bg-white">
+      <section className="text-center py-5 bg-light">
         <Container>
           <h1 className="display-4 fw-bold fade-in mb-3">
             Når du inte? Det gör vi!
@@ -111,8 +111,11 @@ export default function Home() {
         <Container>
           <h2 className="mb-3">Redo att ta nästa steg?</h2>
           <p>Kontakta oss idag för offert, rådgivning eller akuta ärenden.</p>
-          <Button variant="dark" size="lg" href="#kontakt">
-            Kontakta oss
+          <Button
+            variant="dark"
+            href="mailto:elias@brthojd.se?subject=Förfrågan&body=Hej! Jag är intresserad av industriklättring."
+          >
+            Skicka ett mail
           </Button>
         </Container>
       </section>

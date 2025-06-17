@@ -61,8 +61,11 @@ export default function About() {
                 Våra tjänster sträcker sig från fasadrenovering och montage till
                 inspektioner och specialuppdrag inom industrin.
               </p>
-              <Button variant="dark" href="#kontakt">
-                Kontakta oss
+              <Button
+                variant="dark"
+                href="mailto:elias@brthojd.se?subject=Förfrågan&body=Hej! Jag är intresserad av industriklättring."
+              >
+                Skicka ett mail
               </Button>
             </Col>
 
