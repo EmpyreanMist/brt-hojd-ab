@@ -184,3 +184,120 @@ h5 {
 .card p {
   color: var(--text-muted);
 }
+
+.imageWrapper {
+  position: relative;
+  margin: auto;
+  margin-top: 1rem;
+  width: 90vw;
+  height: 50vh;
+  max-height: 900px;
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    height: 80vh;
+  }
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.mainTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.subTitle {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #d0d0d0;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .subTitle {
+    font-size: 0.9rem;
+  }
+}
+
+.darkOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.contentSection {
+  max-width: 85%;
+  margin: 4rem auto;
+  padding: 0 1rem;
+
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentSection > * {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contentSection {
+    text-align: left;
+    align-items: flex-start;
+
+    margin-left: 11rem;
+    margin-right: auto;
+    max-width: 700px;
+  }
+}
+
+.contentSection h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #264406;
+  margin-bottom: 1.5rem;
+}
+
+.contentSection p {
+  margin-bottom: 1rem;
+}
