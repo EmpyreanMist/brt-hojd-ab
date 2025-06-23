@@ -30,17 +30,23 @@ export default function Footer() {
             <h5>Länkar</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#tjanster" className="text-dark text-decoration-none">
+                <a
+                  href="/industriklattring"
+                  className="text-dark text-decoration-none"
+                >
                   Vad är industriklättring?
                 </a>
               </li>
               <li>
-                <a href="#om-oss" className="text-dark text-decoration-none">
+                <a
+                  href="/referenser"
+                  className="text-dark text-decoration-none"
+                >
                   Referenser
                 </a>
               </li>
               <li>
-                <a href="#kontakt" className="text-dark text-decoration-none">
+                <a href="/om" className="text-dark text-decoration-none">
                   Om oss
                 </a>
               </li>

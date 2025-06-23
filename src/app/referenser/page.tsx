@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Card from "../components/Card";
 
 export default function References() {
   return (
@@ -28,10 +29,7 @@ export default function References() {
 
       <main>
         <section className="contentSection">
-          <h2>
-            Lorem ipsum dolor sit amet, <br />
-            consectetuer adipiscing elit
-          </h2>
+          <h2>Här finns BRTs tjänster</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -44,6 +42,24 @@ export default function References() {
             imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
             mollis pretium.
           </p>
+
+          <div className="cardContainer">
+            <Card
+              title="Industriklättring"
+              imageSrc="/workPictures/climbers.jpg"
+              text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+            />
+            <Card
+              title="Byggtjänster"
+              imageSrc="/workPictures/climbers.jpg"
+              text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+            />
+            <Card
+              title="Fallskydd"
+              imageSrc="/workPictures/climbers.jpg"
+              text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+            />
+          </div>
         </section>
       </main>
     </main>

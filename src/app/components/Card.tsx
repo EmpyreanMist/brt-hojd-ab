@@ -1,0 +1,32 @@
+import Image from "next/image";
+
+type CardProps = {
+  title: string;
+  imageSrc: string;
+  text: string;
+  button?: boolean;
+};
+
+export default function Card({
+  title,
+  imageSrc,
+  text,
+  button = true,
+}: CardProps) {
+  return (
+    <div className="custom-card">
+      <Image
+        src={imageSrc}
+        alt={title}
+        width={500}
+        height={300}
+        className="custom-card-img"
+      />
+      <div className="custom-card-body">
+        <h5>{title}</h5>
+        <p>{text}</p>
+      </div>
+      {button && <button className="custom-card-btn">Läs mer</button>}
+    </div>
+  );
+}
