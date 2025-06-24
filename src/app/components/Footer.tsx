@@ -7,63 +7,58 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-dark mt-5 pt-4 pb-3 border-top border-black">
+    <footer className="modern-footer mt-4 pt-3 pb-0">
       <Container>
-        <Row className="align-items-center">
-          <Col md={4} className="mb-3">
+        <Row className="align-items-start text-white">
+          <Col md={4} className="mb-4">
             <Image
               src="/workPictures/brt-loggo.png"
               alt="BRT Höjd AB logotyp"
               width={0}
               height={0}
               sizes="(min-width: 992px) 350px, 400px"
-              className="mb-2 logo-img"
+              className="mb-3 logo-img"
             />
-
-            <p className="small">
+            <p className="footer-text">
               Specialister på industriklättring, byggtjänster och fallskydd. Vi
               når där andra inte räcker till.
             </p>
           </Col>
 
-          <Col md={4} className="mb-3">
-            <h5>Länkar</h5>
+          <Col md={4} className="mb-4">
+            <h5 className="footer-heading">Länkar</h5>
             <ul className="list-unstyled">
               <li>
-                <a
-                  href="/industriklattring"
-                  className="text-dark text-decoration-none"
-                >
+                <a href="/industriklattring" className="footer-link">
                   Vad är industriklättring?
                 </a>
               </li>
               <li>
-                <a
-                  href="/referenser"
-                  className="text-dark text-decoration-none"
-                >
+                <a href="/referenser" className="footer-link">
                   Referenser
                 </a>
               </li>
               <li>
-                <a href="/om" className="text-dark text-decoration-none">
+                <a href="/om" className="footer-link">
                   Om oss
                 </a>
               </li>
             </ul>
           </Col>
 
-          <Col md={4} className="mb-3">
-            <h5>Kontakt</h5>
-            <p className="small mb-1">E-post: elias@brthojd.se</p>
-            <p className="small mb-0">Telefon: 070 579 72 47</p>
-            <p className="small mb-1">Adress: Krondikesvägen 78B Östersund</p>
+          <Col md={4} className="mb-4">
+            <h5 className="footer-heading">Kontakt</h5>
+            <p className="footer-text mb-1">E-post: elias@brthojd.se</p>
+            <p className="footer-text mb-1">Telefon: 070 579 72 47</p>
+            <p className="footer-text mb-1">
+              Adress: Krondikesvägen 78B Östersund
+            </p>
           </Col>
         </Row>
 
-        <hr className="border-top border-secondary mt-4" />
+        <hr className="border-light opacity-25" />
 
-        <p className="text-center text-secondary small mb-0">
+        <p className="text-center text-white-50 small mt-2 mb-0">
           &copy; {new Date().getFullYear()} BRT Höjd AB. Alla rättigheter
           förbehållna.
         </p>
