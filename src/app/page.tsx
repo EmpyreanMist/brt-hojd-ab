@@ -68,8 +68,8 @@ export default function Home() {
                 <Image
                   src="/workPictures/brt-loggo.png"
                   alt="BRT Höjd AB logotyp"
-                  width={0}
-                  height={0}
+                  width={400}
+                  height={200}
                   sizes="(min-width: 992px) 350px, 400px"
                   priority
                   className="d-inline-block align-top logo-img glow-border"
