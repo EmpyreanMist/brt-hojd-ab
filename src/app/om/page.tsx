@@ -125,7 +125,7 @@ export default function About() {
           <Row className="align-items-center">
             <Col md={4} className="text-center mb-4 mb-md-0 order-md-2">
               <img
-                src="/workPictures/-climb.png"
+                src="/workPictures/lina-climb.png"
                 alt="Lina"
                 className="img-fluid rounded shadow"
                 style={{ maxHeight: "300px", objectFit: "cover" }}
