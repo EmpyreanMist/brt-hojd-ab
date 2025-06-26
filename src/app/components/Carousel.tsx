@@ -31,11 +31,13 @@ export default function ImageCarousel() {
                 src={image.src}
                 alt={`Bild ${index + 1}`}
                 style={{
+                  width: "100%",
                   height: "75vh",
                   objectFit: "contain",
                   display: "block",
                 }}
               />
+
               <div
                 style={{
                   position: "absolute",

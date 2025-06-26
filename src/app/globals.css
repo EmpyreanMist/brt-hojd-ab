@@ -64,6 +64,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -141,17 +142,6 @@ section {
 
 .delay-4-5 {
   animation-delay: 1.7s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .feature-icon {
