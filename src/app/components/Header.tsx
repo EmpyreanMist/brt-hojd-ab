@@ -14,7 +14,7 @@ export default function Header() {
       expand="lg"
       bg="white"
       variant="light"
-      className="px-3 py-3 shadow-sm"
+      className="px-3 py-3 shadow-sm modern-footer border-light"
     >
       <Container fluid>
         <Navbar.Brand href="/" className="d-flex align-items-center">

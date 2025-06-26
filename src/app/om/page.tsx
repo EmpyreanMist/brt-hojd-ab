@@ -55,10 +55,18 @@ export default function About() {
               </h3>
               <p className="fade-in delay-3">
                 Vi började industriklättra 2023 och är därför ett ungt företag
-                med en dröm att ta våra respektive hantverk till högre höjder...
+                med en dröm att ta våra respektive hantverk till högre höjder.
+                Resan började för Elias snickrandes i garaget som tonåring och
+                inse man vill vara hantverkare med egna, till att klättra sin
+                första klippa och fundera på hur man kan spendera mer tid på
+                höjd?
               </p>
               <p className="fade-in delay-3-5">
-                Vi gillar att testa nya metoder och att hela tiden utvecklas...
+                Vi gillar att testa nya metoder och att hela tiden utvecklas. Vi
+                utbildar oss flera gånger varje år, och tränar kamraträddning
+                regelbundet. Vår vision är att vara en seriös totalentreprenör,
+                och att hjälpa beställare att förstå när rep är mer
+                kostnadseffektivt och säkert.{" "}
               </p>
               <Button
                 variant="dark"
