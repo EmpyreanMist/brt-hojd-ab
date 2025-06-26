@@ -7,12 +7,7 @@ type CardProps = {
   button?: boolean;
 };
 
-export default function Card({
-  title,
-  imageSrc,
-  text,
-  button = true,
-}: CardProps) {
+export default function Card({ title, imageSrc, text }: CardProps) {
   return (
     <div className="custom-card">
       <Image
@@ -26,8 +21,6 @@ export default function Card({
         <h5>{title}</h5>
         <p>{text}</p>
       </div>
-      {/*       {button && <button className="custom-card-btn">Läs mer</button>}
-       */}
     </div>
   );
 }
