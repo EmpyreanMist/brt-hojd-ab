@@ -6,7 +6,7 @@ export default function References() {
     <main>
       <div className="imageWrapper">
         <Image
-          src="/workPictures/climbers.jpg"
+          src="/workPictures/suited.png"
           alt="Climbers working on a high building"
           fill
           priority
@@ -16,14 +16,7 @@ export default function References() {
         <div className="darkOverlay" />
 
         <div className="textOverlay">
-          <p className="label">ABCDEFHIJ</p>
-          <h1 className="mainTitle">
-            Lorem ipsum dolor sit amet, consectetuer a
-          </h1>
-          <p className="subTitle">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget
-          </p>
+          <h1 className="mainTitle">Våra tjänster</h1>
         </div>
       </div>
 
@@ -45,19 +38,24 @@ export default function References() {
 
           <div className="cardContainer">
             <Card
-              title="Industriklättring"
+              title="Fasad"
               imageSrc="/workPictures/climbers.jpg"
-              text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+              text="Vi åtgärdar fasader när ställning blir opraktiskt"
             />
             <Card
-              title="Byggtjänster"
+              title="Montering"
               imageSrc="/workPictures/climbers.jpg"
-              text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+              text="Snabbt montage av alla typer av element på höjd"
             />
             <Card
-              title="Fallskydd"
+              title="Inspektion"
               imageSrc="/workPictures/climbers.jpg"
-              text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+              text="Vi kombinerar drönare med fysisk inspektion på t.ex. tak, betong, eller fallskyddsutrustning."
+            />
+            <Card
+              title="Bergsförstärkning"
+              imageSrc="/workPictures/climbers.jpg"
+              text="Skrotning av schakt, berg, samt nätning och bult."
             />
           </div>
         </section>

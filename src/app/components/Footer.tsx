@@ -43,6 +43,16 @@ export default function Footer() {
                   Om oss
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/brthojd/"
+                  className="footer-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
             </ul>
           </Col>
 

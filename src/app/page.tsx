@@ -108,6 +108,13 @@ export default function Home() {
                 </Card>
               </Col>
             </Row>
+
+            <div className="text-center mt-4">
+              <p className="mb-3 fw-semibold">...och mer</p>
+              <Button variant="dark" href="/referenser">
+                Läs mer om våra tjänster
+              </Button>
+            </div>
           </Container>
         </section>
 
