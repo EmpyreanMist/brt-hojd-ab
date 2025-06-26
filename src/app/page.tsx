@@ -72,7 +72,7 @@ export default function Home() {
                   height={200}
                   sizes="(min-width: 992px) 350px, 400px"
                   priority
-                  className="d-inline-block align-top logo-img glow-border"
+                  className="d-inline-block align-top logo-img"
                 />
               </Col>
             </Row>
