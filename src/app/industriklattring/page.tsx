@@ -11,9 +11,19 @@ export default function IndustriklattringP() {
             Vad är industriklättring?
           </h1>
           <p className="lead fade-in delay-1">
-            Industriklättring är en metod där specialutbildade tekniker använder
-            rep, sele och annan klätterutrustning för att utföra arbete på
-            svåråtkomliga platser – utan behov av ställningar eller liftar.
+            Industriklättring eller rope access har funnits åtminstone sedan
+            1970-talet på oljeplattformar i nordsjön. Istället för att bygga
+            ställningar för att byta en lampa började man använda rep som
+            arbetspositionering på en bråkdel av tiden, och strax därefter kom
+            det andra repet som säkerhetslina
+          </p>
+          <p className="lead fade-in delay-1">
+            När vi klättrar har vi därför minst 2 rep, ett aktivt och ett
+            passivt. Oftast börjar vi från toppen, kopplar på alla verktyg och
+            firar ner till arbetsplatsen, utför jobbet och firar ner till
+            marken. Men vi kan också klättra på repet, eller använda repmopeder
+            och vinschar för att lyfta tunga saker eller minska belastningen på
+            arbetaren.
           </p>
         </Container>
       </section>
@@ -23,10 +33,18 @@ export default function IndustriklattringP() {
           <Row className="justify-content-center text-center">
             <Col md={8} className="fade-in delay-2">
               <p className="lead">
-                Genom att använda denna metod kan arbetet utföras snabbare,
-                säkrare och mer kostnadseffektivt. Industriklättrare arbetar
-                ofta på höga höjder, inom trånga utrymmen eller på platser där
-                traditionella metoder inte fungerar.
+                Ett jobb inleds alltid med en riskanalys, för att t.ex. avgöra
+                vilken skyddsutrustning som krävs, vilka repskydd mot kanter som
+                är lämpligt, och enklast arbetsmetod. Vi jobbar alltid som minst
+                2 personer, kamratcheckar varandra för att minska den mänskliga
+                faktorn och har alltid en förberedd räddningsplan innan arbetet
+                börjar.
+              </p>
+              <p className="lead">
+                Med tiden utvecklades olika standarder, såsom IRATA, SPRAT, och
+                SOFT. Dom kommer från olika delar av världen men delar oftast en
+                likvärdig säkerhetsstandard, och därför är vi utbildade enligt
+                IRATA och SOFT beroende på vars vi utför jobb.
               </p>
             </Col>
           </Row>
@@ -38,9 +56,11 @@ export default function IndustriklattringP() {
           <Row className="justify-content-center text-center">
             <Col md={8} className="fade-in delay-3">
               <p className="lead">
-                Alla våra klättrare är certifierade enligt IRATA eller SPRAT och
-                har lång erfarenhet inom branschen. Säkerhet och kvalitet är
-                alltid vår högsta prioritet.
+                Är arbete via rep osäkert? På grund av den grundliga
+                säkerhetskulturen vi följer har vår industri några av dom
+                absolut lägsta snitten av skador per arbetad timme! Du har
+                säkert funderat på det, men svaret är nej, vi har inte
+                risktillägg när vi jobbar.
               </p>
               <a
                 href="mailto:elias@brthojd.se?subject=Industriklättring&body=Hej! Jag vill veta mer om industriklättring."
