@@ -11,6 +11,7 @@ export default function SplashIntro({ children }) {
     const removeTimer = setTimeout(() => {
       setShowSplash(false);
       document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
     }, 3000);
 
     return () => {
@@ -27,7 +28,7 @@ export default function SplashIntro({ children }) {
           <img
             src="/workPictures/building.jpg"
             alt="Splash"
-            className="splash-img splash-wrapper"
+            className="splash-img"
           />
         </div>
       )}
