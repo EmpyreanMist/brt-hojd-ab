@@ -97,13 +97,19 @@ export default function About() {
           <h3 className="text-center mb-5">
             Här kommer en kort presentation av oss
           </h3>
+
           <Row className="mb-5 align-items-center">
             <Col md={4} className="text-center mb-4 mb-md-0">
               <img
                 src="/workPictures/elias-selfie.png"
                 alt="Elias"
-                className="img-fluid rounded shadow"
-                style={{ maxHeight: "300px", objectFit: "cover" }}
+                className="img-fluid rounded shadow glow-border"
+                style={{
+                  maxHeight: "450px",
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "auto",
+                }}
               />
             </Col>
             <Col md={8}>
@@ -123,15 +129,20 @@ export default function About() {
           </Row>
 
           <Row className="align-items-center">
-            <Col md={4} className="text-center mb-4 mb-md-0 order-md-2">
+            <Col md={4} className="text-center mb-4 mb-md-0">
               <img
                 src="/workPictures/lina-climb.png"
                 alt="Lina"
-                className="img-fluid rounded shadow"
-                style={{ maxHeight: "300px", objectFit: "cover" }}
+                className="img-fluid rounded shadow glow-border"
+                style={{
+                  maxHeight: "450px",
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "auto",
+                }}
               />
             </Col>
-            <Col md={8} className="order-md-1">
+            <Col md={8}>
               <h4 className="fw-semibold">Lina</h4>
               <p className="mb-2">
                 Murare som både sätter badrum, murar skorstenar och putsar allt

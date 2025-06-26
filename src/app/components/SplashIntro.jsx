@@ -27,7 +27,7 @@ export default function SplashIntro({ children }) {
           <img
             src="/workPictures/building.jpg"
             alt="Splash"
-            className="splash-img"
+            className="splash-img splash-wrapper"
           />
         </div>
       )}

@@ -72,7 +72,7 @@ export default function Home() {
                   height={0}
                   sizes="(min-width: 992px) 350px, 400px"
                   priority
-                  className="d-inline-block align-top logo-img"
+                  className="d-inline-block align-top logo-img glow-border"
                 />
               </Col>
             </Row>
@@ -82,39 +82,44 @@ export default function Home() {
         <section className="py-5 bg-light">
           <Container>
             <h2 className="text-center mb-4">Våra tjänster</h2>
-            <Row>
-              <Col md={4} className="mb-4">
+            <Row className="text-center justify-content-center">
+              <Col md={6} className="mb-4">
                 <Card className="h-100 shadow-sm p-3">
-                  <h5 className="fw-bold">Fasadrenovering</h5>
-                  <p className="small mb-0">
-                    Vi renoverar fasader där ställningar är opraktiska.
+                  <h5 className="fw-bold">Fasad</h5>
+                  <p className="small mb-0 text-black">
+                    Vi åtgärdar fasader när ställning blir opraktiskt
                   </p>
                 </Card>
               </Col>
-              <Col md={4} className="mb-4">
+
+              <Col md={6} className="mb-4">
                 <Card className="h-100 shadow-sm p-3">
-                  <h5 className="fw-bold">Monteringsarbeten</h5>
-                  <p className="small mb-0">
-                    Vi monterar skyltar, rör, nät och andra element på höjd.
+                  <h5 className="fw-bold">Montering</h5>
+                  <p className="small mb-0 text-black">
+                    Snabbt montage av alla typer av element på höjd
                   </p>
                 </Card>
               </Col>
-              <Col md={4} className="mb-4">
+
+              <Col md={6} className="mb-4">
                 <Card className="h-100 shadow-sm p-3">
-                  <h5 className="fw-bold">Inspektioner & Dokumentation</h5>
-                  <p className="small mb-0">
-                    Visuell kontroll av svåråtkomliga platser med foto/video.
+                  <h5 className="fw-bold">Inspektion</h5>
+                  <p className="small mb-0 text-black">
+                    Vi kombinerar drönare med fysisk inspektion på t.ex. tak,
+                    betong, eller fallskyddsutrustning.
+                  </p>
+                </Card>
+              </Col>
+
+              <Col md={6} className="mb-4">
+                <Card className="h-100 shadow-sm p-3">
+                  <h5 className="fw-bold">Bergsförstärkning</h5>
+                  <p className="small mb-0 text-black">
+                    Skrotning av schakt, berg, samt nätning och bult.
                   </p>
                 </Card>
               </Col>
             </Row>
-
-            <div className="text-center mt-4">
-              <p className="mb-3 fw-semibold">...och mer</p>
-              <Button variant="dark" href="/referenser">
-                Läs mer om våra tjänster
-              </Button>
-            </div>
           </Container>
         </section>
 

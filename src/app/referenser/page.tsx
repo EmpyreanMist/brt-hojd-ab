@@ -16,46 +16,41 @@ export default function References() {
         <div className="darkOverlay" />
 
         <div className="textOverlay">
-          <h1 className="mainTitle">Våra tjänster</h1>
+          <h1 className="mainTitle">Referenser</h1>
         </div>
       </div>
 
       <main>
         <section className="contentSection">
-          <h2>Här finns BRTs tjänster</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          </p>
-          <p>
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-            mollis pretium.
-          </p>
+          <h2>Våra referenser</h2>
 
           <div className="cardContainer">
             <Card
-              title="Fasad"
+              title="Vætabacken, Mattmar
+"
               imageSrc="/workPictures/climbers.jpg"
-              text="Vi åtgärdar fasader när ställning blir opraktiskt"
+              text="Då utsiktstornet börjar ha några år på nacken hade en del vajrar vandrat in i timmerstockarna och hörnen som var strukturella hade börjat delvis ruttna. Nya hörn i 50x250 virke och salningar monterades, några fästen gjordes om och vajrarna spändes på nytt. 
+"
             />
             <Card
-              title="Montering"
+              title="Kraftverk, indalsälven
+"
               imageSrc="/workPictures/climbers.jpg"
-              text="Snabbt montage av alla typer av element på höjd"
+              text="Innan övriga yrkesgrupper och ställningsbyggare kunde gå ner i schaktet skrotade vi av berget för att säkerställa allas säkerhet. 
+"
             />
             <Card
-              title="Inspektion"
+              title="Bergarbete, Berkåk
+"
               imageSrc="/workPictures/climbers.jpg"
-              text="Vi kombinerar drönare med fysisk inspektion på t.ex. tak, betong, eller fallskyddsutrustning."
+              text="VSkrotning, nätning och säkerhetsbultar monterades på högsta delen av klippan då det fanns risk att stenras på den höjden kunde ta sig över vallen intill kraftverksvägen. "
             />
             <Card
-              title="Bergsförstärkning"
+              title="Kraftverk, indalsälven
+"
               imageSrc="/workPictures/climbers.jpg"
-              text="Skrotning av schakt, berg, samt nätning och bult."
+              text="Det gamla hisschaktet hade vatten rinnande och strukturella delar behövde förstärkas, till detta användes Hiltis stålprofilssystem
+"
             />
           </div>
         </section>

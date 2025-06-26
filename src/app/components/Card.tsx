@@ -20,13 +20,14 @@ export default function Card({
         alt={title}
         width={500}
         height={300}
-        className="custom-card-img"
+        className="custom-card-img glow-border"
       />
       <div className="custom-card-body">
         <h5>{title}</h5>
         <p>{text}</p>
       </div>
-      {button && <button className="custom-card-btn">Läs mer</button>}
+      {/*       {button && <button className="custom-card-btn">Läs mer</button>}
+       */}
     </div>
   );
 }

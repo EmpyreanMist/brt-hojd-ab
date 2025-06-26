@@ -449,3 +449,38 @@ h5 {
     padding-bottom: 1rem;
   }
 }
+
+/* Gäller för alla navbar-länkar */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Endast för större skärmar (lg = 992px+) */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Hover-effekt */
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+  text-decoration: underline;
+}
+
+.glow-border {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 25px rgba(255, 94, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Extra: glow on hover */
+.glow-border:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5), 0 0 36px rgba(255, 94, 0, 0.4);
+}
