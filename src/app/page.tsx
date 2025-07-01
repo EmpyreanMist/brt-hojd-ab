@@ -1,3 +1,4 @@
+import "./styles/landing.css";
 import Carousel from "./components/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -82,27 +83,35 @@ export default function Home() {
         <section className="py-5 bg-light">
           <Container>
             <h2 className="text-center mb-4">Våra tjänster</h2>
-            <Row className="text-center justify-content-center">
-              <Col md={6} className="mb-4">
-                <Card className="h-100 shadow-sm p-3">
+
+            <Row className="justify-content-center">
+              <Col md={6} className="mb-4 d-flex justify-content-center">
+                <Card
+                  className="w-100 h-100 shadow-sm p-3"
+                  style={{ maxWidth: "600px" }}
+                >
                   <h5 className="fw-bold">Fasad</h5>
                   <p className="small mb-0 text-black">
                     Vi åtgärdar fasader när ställning blir opraktiskt
                   </p>
                 </Card>
               </Col>
-
-              <Col md={6} className="mb-4">
-                <Card className="h-100 shadow-sm p-3">
+              <Col md={6} className="mb-4 d-flex justify-content-center">
+                <Card
+                  className="w-100 h-100 shadow-sm p-3"
+                  style={{ maxWidth: "600px" }}
+                >
                   <h5 className="fw-bold">Montering</h5>
                   <p className="small mb-0 text-black">
                     Snabbt montage av alla typer av element på höjd
                   </p>
                 </Card>
               </Col>
-
-              <Col md={6} className="mb-4">
-                <Card className="h-100 shadow-sm p-3">
+              <Col md={6} className="mb-4 d-flex justify-content-center">
+                <Card
+                  className="w-100 h-100 shadow-sm p-3"
+                  style={{ maxWidth: "600px" }}
+                >
                   <h5 className="fw-bold">Inspektion</h5>
                   <p className="small mb-0 text-black">
                     Vi kombinerar drönare med fysisk inspektion på t.ex. tak,
@@ -110,9 +119,11 @@ export default function Home() {
                   </p>
                 </Card>
               </Col>
-
-              <Col md={6} className="mb-4">
-                <Card className="h-100 shadow-sm p-3">
+              <Col md={6} className="mb-4 d-flex justify-content-center">
+                <Card
+                  className="w-100 h-100 shadow-sm p-3"
+                  style={{ maxWidth: "600px" }}
+                >
                   <h5 className="fw-bold">Bergsförstärkning</h5>
                   <p className="small mb-0 text-black">
                     Skrotning av schakt, berg, samt nätning och bult.

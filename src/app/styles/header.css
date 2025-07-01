@@ -1,0 +1,38 @@
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Anpassning för desktoplogga */
+@media (min-width: 992px) {
+  .logo-img {
+    width: 350px;
+  }
+}
+
+/* Navbar brand container */
+.navbar-brand {
+  flex-shrink: 0;
+}
+
+/* Gäller för alla navbar-länkar */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover-effekt */
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+  text-decoration: underline;
+}
+
+/* Endast för större skärmar (lg = 992px+) */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0.75rem;
+  }
+}

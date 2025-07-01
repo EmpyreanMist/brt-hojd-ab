@@ -78,15 +78,17 @@ export default function About() {
             </Col>
 
             <Col md={6}>
-              <video
-                ref={videoRef}
-                src="/videos/explosion.mp4"
-                className="w-100 rounded shadow fade-in delay-4-5"
-                muted
-                loop
-                playsInline
-                controls
-              />
+              <Col md={6} className="text-center">
+                <video
+                  ref={videoRef}
+                  src="/videos/explosion.mp4"
+                  className="w-100 rounded shadow fade-in delay-4-5"
+                  muted
+                  loop
+                  playsInline
+                  controls
+                />
+              </Col>
             </Col>
           </Row>
         </Container>
@@ -105,13 +107,14 @@ export default function About() {
                 alt="Elias"
                 className="img-fluid rounded shadow glow-border"
                 style={{
-                  maxHeight: "450px",
-                  objectFit: "cover",
                   width: "100%",
-                  height: "auto",
+                  maxWidth: "350px",
+                  height: "550px",
+                  objectFit: "cover",
                 }}
               />
             </Col>
+
             <Col md={8}>
               <h4 className="fw-semibold">Elias</h4>
               <p className="mb-2">
@@ -135,13 +138,14 @@ export default function About() {
                 alt="Lina"
                 className="img-fluid rounded shadow glow-border"
                 style={{
-                  maxHeight: "450px",
-                  objectFit: "cover",
                   width: "100%",
-                  height: "auto",
+                  maxWidth: "350px",
+                  height: "550px",
+                  objectFit: "cover",
                 }}
               />
             </Col>
+
             <Col md={8}>
               <h4 className="fw-semibold">Lina</h4>
               <p className="mb-2">
