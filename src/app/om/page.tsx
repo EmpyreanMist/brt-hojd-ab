@@ -54,19 +54,19 @@ export default function About() {
                 Vi når dit andra inte kan
               </h3>
               <p className="fade-in delay-3">
-                Vi började industriklättra 2023 och är därför ett ungt företag
-                med en dröm att ta våra respektive hantverk till högre höjder.
-                Resan började för Elias snickrandes i garaget som tonåring och
-                inse man vill vara hantverkare med egna, till att klättra sin
-                första klippa och fundera på hur man kan spendera mer tid på
-                höjd?
+                Vi började med industriklättring 2023 och är därför ett ungt
+                företag med en dröm om att ta våra hantverk till nya höjder –
+                bokstavligen. Resan började för Elias som tonåring, snickrandes
+                i garaget, där han insåg att han ville bli hantverkare på egna
+                villkor. När han sedan klättrade sin första klippa väcktes en ny
+                tanke: Hur kan man få spendera mer tid på höjd?
               </p>
               <p className="fade-in delay-3-5">
-                Vi gillar att testa nya metoder och att hela tiden utvecklas. Vi
-                utbildar oss flera gånger varje år, och tränar kamraträddning
-                regelbundet. Vår vision är att vara en seriös totalentreprenör,
-                och att hjälpa beställare att förstå när rep är mer
-                kostnadseffektivt och säkert.{" "}
+                Vi gillar att testa nya metoder och att ständigt utvecklas. Vi
+                utbildar oss flera gånger om året och tränar regelbundet på
+                kamraträddning. Vår vision är att vara en seriös
+                totalentreprenör – och att hjälpa beställare förstå när rep är
+                det mest kostnadseffektiva och säkra alternativet.
               </p>
               <Button
                 variant="dark"

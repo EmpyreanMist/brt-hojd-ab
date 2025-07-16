@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
 
 import { Carousel } from "react-bootstrap";
+import { useState } from "react";
 
 const images = [
   {
@@ -21,38 +21,18 @@ const images = [
   },
 ];
 
-const getBackgroundColor = (index: number): string => {
-  switch (index) {
-    case 0:
-      return "#d6cfc6"; // Mörk färg för hero1.jpg
-    case 1:
-      return "#e7edf7"; // Mörk färg för hero2.jpg
-    case 2:
-      return "#1e2422"; // Mörk färg för hero3.jpg
-    default:
-      return "#000000";
-  }
-};
-
 export default function ImageCarousel() {
   const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex: number) => {
-    setIndex(selectedIndex);
-  };
-
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-  const bgColor = getBackgroundColor(index);
 
   return (
     <div
       className="carousel-wrapper text-center"
       style={{
-        backgroundColor: !isMobile ? bgColor : "transparent",
+        backgroundColor: "#1e2422",
         transition: "background-color 0.5s ease",
       }}
     >
-      <Carousel fade interval={4000} indicators={false} onSelect={handleSelect}>
+      <Carousel fade interval={4000} indicators={false} onSelect={setIndex}>
         {images.map((image, i) => (
           <Carousel.Item key={i}>
             <div className="carousel-item-wrapper">

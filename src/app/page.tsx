@@ -79,57 +79,50 @@ export default function Home() {
             </Row>
           </Container>
         </section>
-
         <section className="py-5 bg-light">
           <Container>
             <h2 className="text-center mb-4">Våra tjänster</h2>
-
             <Row className="justify-content-center">
-              <Col md={6} className="mb-4 d-flex justify-content-center">
-                <Card
-                  className="w-100 h-100 shadow-sm p-3"
-                  style={{ maxWidth: "600px" }}
+              {[
+                {
+                  title: "Fasad",
+                  desc: "Vi åtgärdar fasader när ställning blir opraktiskt",
+                },
+                {
+                  title: "Montering",
+                  desc: "Snabbt montage av alla typer av element på höjd",
+                },
+                {
+                  title: "Inspektion",
+                  desc: "Vi kombinerar drönare med fysisk inspektion på t.ex. tak, betong, eller fallskyddsutrustning.",
+                },
+                {
+                  title: "Bergsförstärkning",
+                  desc: "Skrotning av schakt, berg, samt nätning och bult.",
+                },
+                {
+                  title: "Rostskyddsmålning",
+                  desc: "Vi hjälper till att åtgärda rost och skador på målningssystem",
+                },
+                {
+                  title: "Bygg",
+                  desc: "Självklart gör vi även tak, högtryckstvätt, och alla andra byggjobb man förväntar av hantverkare med yrkesbevis",
+                },
+              ].map((service, index) => (
+                <Col
+                  key={index}
+                  md={6}
+                  className="mb-4 d-flex justify-content-center"
                 >
-                  <h5 className="fw-bold">Fasad</h5>
-                  <p className="small mb-0 text-black">
-                    Vi åtgärdar fasader när ställning blir opraktiskt
-                  </p>
-                </Card>
-              </Col>
-              <Col md={6} className="mb-4 d-flex justify-content-center">
-                <Card
-                  className="w-100 h-100 shadow-sm p-3"
-                  style={{ maxWidth: "600px" }}
-                >
-                  <h5 className="fw-bold">Montering</h5>
-                  <p className="small mb-0 text-black">
-                    Snabbt montage av alla typer av element på höjd
-                  </p>
-                </Card>
-              </Col>
-              <Col md={6} className="mb-4 d-flex justify-content-center">
-                <Card
-                  className="w-100 h-100 shadow-sm p-3"
-                  style={{ maxWidth: "600px" }}
-                >
-                  <h5 className="fw-bold">Inspektion</h5>
-                  <p className="small mb-0 text-black">
-                    Vi kombinerar drönare med fysisk inspektion på t.ex. tak,
-                    betong, eller fallskyddsutrustning.
-                  </p>
-                </Card>
-              </Col>
-              <Col md={6} className="mb-4 d-flex justify-content-center">
-                <Card
-                  className="w-100 h-100 shadow-sm p-3"
-                  style={{ maxWidth: "600px" }}
-                >
-                  <h5 className="fw-bold">Bergsförstärkning</h5>
-                  <p className="small mb-0 text-black">
-                    Skrotning av schakt, berg, samt nätning och bult.
-                  </p>
-                </Card>
-              </Col>
+                  <Card
+                    className="w-100 h-100 shadow-sm p-3"
+                    style={{ maxWidth: "450px" }}
+                  >
+                    <h5 className="fw-bold">{service.title}</h5>
+                    <p className="small mb-0 text-black">{service.desc}</p>
+                  </Card>
+                </Col>
+              ))}
             </Row>
           </Container>
         </section>
