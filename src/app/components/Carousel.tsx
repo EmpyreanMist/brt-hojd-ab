@@ -1,7 +1,6 @@
 "use client";
 
 import { Carousel } from "react-bootstrap";
-import { useState } from "react";
 
 const images = [
   {
@@ -22,8 +21,6 @@ const images = [
 ];
 
 export default function ImageCarousel() {
-  const [index, setIndex] = useState(0);
-
   return (
     <div
       className="carousel-wrapper text-center"
@@ -32,7 +29,7 @@ export default function ImageCarousel() {
         transition: "background-color 0.5s ease",
       }}
     >
-      <Carousel fade interval={4000} indicators={false} onSelect={setIndex}>
+      <Carousel fade interval={4000} indicators={false}>
         {images.map((image, i) => (
           <Carousel.Item key={i}>
             <div className="carousel-item-wrapper">
