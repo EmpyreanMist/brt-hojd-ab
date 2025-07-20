@@ -16,19 +16,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BRT Höjd AB",
-  description: "Experter på industriklättring och arbete på höjd.",
+  title: "BRT Höjd AB – Industriklättring i Jämtland",
+  description:
+    "BRT Höjd AB är specialister på industriklättring och arbete på höjd i Jämtland. Vi erbjuder säkra och professionella lösningar för bygg, industri och fastigheter.",
   icons: {
     icon: "/favicon.png",
   },
+  openGraph: {
+    title: "BRT Höjd AB – Industriklättring i Jämtland",
+    description:
+      "Experter på höghöjdsarbeten i Jämtland – industriklättring, fastighetsservice och mer.",
+    url: "https://www.brthojd.se",
+    siteName: "BRT Höjd AB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "BRT Höjd AB",
+    description: "Experter på höghöjdsarbeten i Jämtland.",
+  },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="sv">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
